@@ -66,7 +66,7 @@ export default function Navbar() {
         <div className="flex h-full items-center">
           <div className="hidden md:block">
             {navItems.map((item) => (
-              <a className="nav-hover-btn" href={`#${item.toLowerCase()}`}>{item}</a>
+              <a key={item} className="nav-hover-btn" href={`#${item.toLowerCase()}`}>{item}</a>
             ))}
           </div>
           <button onClick={toggleAudioIndicator} className="ml-10 flex items-center space-x-0.5">
